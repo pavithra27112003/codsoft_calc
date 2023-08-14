@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <style>
+    .calc {
+      margin-top: 10%;
+      background-image: url("img.jpg");
+      background-color: black;
+      width: fit-content;
+      padding: 20px;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+    #inp {
+      padding: 20px;
+      background-color: black;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      border-color: white;
+      border-radius: 5px;
+    }
+    #btn {
+      padding: 5px;
+      width: 55px;
+      border-radius: 5px;
+      font-weight: bold;
+      border-color: black;
+    }
+    #btn:hover {
+      background-color: black;
+      color: white;
+      transition-duration: 0.5s;
+      border-color: white;
+    }
+  </style>
+  <body style="background-image: url(img2.jpg)">
+    <center>
+      <h1>Calculator by pavithra </h1>
+      <div class="calc">
+        <form name="form1">
+          <input type="text" name="ans" id="inp" />
+          <br /><br />
+          <input
+            type="button"
+            value="1"
+            id="btn"
+            onclick="form1.ans.value += '1'"
+          />
+          <input
+            type="button"
+            value="2"
+            id="btn"
+            onclick="form1.ans.value += '2'"
+          />
+          <input
+            type="button"
+            value="3"
+            id="btn"
+            onclick="form1.ans.value += '3'"
+          />
+          <input
+            type="button"
+            value="+"
+            id="btn"
+            onclick="form1.ans.value += '+'"
+          />
+          <br /><br />
+          <input
+            type="button"
+            value="4"
+            id="btn"
+            onclick="form1.ans.value += '4'"
+          />
+          <input
+            type="button"
+            value="5"
+            id="btn"
+            onclick="form1.ans.value += '5'"
+          />
+          <input
+            type="button"
+            value="6"
+            id="btn"
+            onclick="form1.ans.value += '6'"
+          />
+          <input
+            type="button"
+            value="-"
+            id="btn"
+            onclick="form1.ans.value += '-'"
+          />
+
+          <br /><br />
+          <input
+            type="button"
+            value="7"
+            id="btn"
+            onclick="form1.ans.value += '7'"
+          />
+          <input
+            type="button"
+            value="8"
+            id="btn"
+            onclick="form1.ans.value += '8'"
+          />
+          <input
+            type="button"
+            value="9"
+            id="btn"
+            onclick="form1.ans.value += '9'"
+          />
+          <input
+            type="button"
+            value="*"
+            id="btn"
+            onclick="form1.ans.value += '*'"
+          />
+
+          <br /><br />
+          <input
+            type="button"
+            value="="
+            id="btn"
+            onclick="form1.ans.value = eval(form1.ans.value)"
+          />
+          <input
+            type="button"
+            value="0"
+            id="btn"
+            onclick="form1.ans.value += '0'"
+          />
+          <input
+            type="button"
+            value="C"
+            id="btn"
+            onclick="form1.ans.value = ''"
+          />
+          <input
+            type="button"
+            value="/"
+            id="btn"
+            onclick="form1.ans.value += '/'"
+          />
+        </form>
+      </div>
+    </center>
+  </body>
+</html>
